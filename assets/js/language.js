@@ -24,8 +24,6 @@ const rednerLanguage = {
 
     init: () => {
         rednerLanguage.setDefaultLanguage();
-        setTimeout(() => {
-            rednerLanguage.onClickLanguage();
-        }, 5000);
+        rednerLanguage.onClickLanguage();
     }
 }
