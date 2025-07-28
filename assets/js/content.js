@@ -83,7 +83,7 @@ const purposes = {
             dutc: "Breid de ideeën uit",
             fr: "Développez les idées",
             jp: "アイデアを広げる",
-            icon: `<i class="las la-lightbulb"></i>`
+            icon: `<img src="./assets/images/lightbulb.PNG" height="35">`
         },
 
         {
@@ -92,7 +92,7 @@ const purposes = {
             dutc: "Breng kunst mee",
             fr: "Apportez de l'art avec vous",
             jp: "アートを持ち歩きましょう",
-            icon: `<i class="las la-palette"></i>`
+            icon: `<img src="./assets/images/palette.PNG" height="35">`
         },
 
         {
@@ -101,7 +101,7 @@ const purposes = {
             dutc: "Maak uw aantekeningen werkelijkheid",
             fr: "Faites de vos notes une réalité",
             jp: "メモを現実にする",
-            icon: `<i class="las la-magic"></i>`
+            icon: `<img src="./assets/images/magic.PNG" height="35">`
         },
 
         {
@@ -110,7 +110,7 @@ const purposes = {
             dutc: "Op reis",
             fr: "En voyage",
             jp: "旅の途中",
-            icon: `<img src="./assets/images/planeicon.png" width="45">`
+            icon: `<img src="./assets/images/planeicon.png" height="35">`
         },
 
         {
@@ -119,7 +119,7 @@ const purposes = {
             dutc: "In de klas",
             fr: "En classe",
             jp: "授業中",
-            icon: `<i class="las la-school"></i>`
+            icon: `<img src="./assets/images/class.PNG" height="35">`
         },
 
         {
@@ -128,7 +128,7 @@ const purposes = {
             dutc: "Thuis",
             fr: "À la maison",
             jp: "自宅で",
-            icon: `<i class="las la-campground"></i>`
+            icon: `<img src="./assets/images/home.PNG" height="35">`
         },
     ]
 }
