@@ -11,6 +11,7 @@ https://alinzlami.github.io/dreamNote/
 - 🧠 BEM Methodology – Clear CSS class structure for maintainability  
 - 📦 Module Pattern – Encapsulated logic using JavaScript design principles  
 - 🚀 GitHub Pages – Live demo deployment
+- ✅ Cypress Testing
 
   # 🌟 Features
 
@@ -18,7 +19,7 @@ https://alinzlami.github.io/dreamNote/
   Enables basic multilingual translations even when the network is unavailable using client-side caching and fallback logic
 
 - Responsive Homepage Design  
-  Mobile-friendly layout with scalable typography and container handling via Bootstrap’s system
+  Mobile-friendly layout with scalable typography and container handling via Bootstrap’s system, and Sass coding
 
 - Smooth User Experience  
   Integrated AOS.js for dynamic scroll-triggered animations to enhance visual engagement
@@ -28,3 +29,6 @@ https://alinzlami.github.io/dreamNote/
 
 - Live Demo Deployment  
   Project deployed publicly via GitHub Pages for real-time preview and evaluation
+
+- Cypress Unit Test
+  Tested some sections of the page by Cypress
