@@ -7,4 +7,5 @@ const DOM_list = {
     ourGalleryHTML: document.getElementById("ourGallery"),
     ourGalleryListHTML: document.getElementById("ourGalleryList"),
     staticsyHTML: document.getElementById("statics"),
+    preFooterHTML: document.getElementById("preFooter"),
 }

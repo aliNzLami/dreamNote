@@ -25,6 +25,13 @@ const gallery = [
     },
 ]
 
+const preFooter = [
+    "./assets/images/i.jpg",
+    "./assets/images/l.jpg",
+    "./assets/images/j.jpg",
+]
+
+
 const emptyLayout = () => {
     console.log("HELLO");
     for(let item in DOM_list) {
@@ -128,6 +135,16 @@ const renderLayout = {
         
     },
 
+    showPreFooter: () => {
+
+        for(let src of preFooter) {
+            DOM_list.preFooterHTML.innerHTML += `<div class="col-md-4 px-0">
+                                                    <img src="${src}" width="100%" height="100%">
+                                                </div>`
+        }
+        
+    },
+
     init: () => {
         renderLayout.showNav();
         renderLayout.showYourNote();
@@ -135,5 +152,6 @@ const renderLayout = {
         renderLayout.showHearYou();
         renderLayout.showOurGallery();
         renderLayout.showStatics();
+        renderLayout.showPreFooter();
     }
 }

@@ -3,6 +3,10 @@
     "sass": "^1.89.2"
   },
   "scripts": {
-    "compile-sass": "sass assets/scss/main.scss assets/css/main.css"
+    "compile-sass": "sass assets/scss/main.scss assets/css/main.css",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^14.5.3"
   }
 }
