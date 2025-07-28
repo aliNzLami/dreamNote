@@ -1,0 +1,50 @@
+.about-noteBook {
+    background-color: #2a2a30;
+    color: rgb(220, 208, 181);
+    
+    .row {
+        flex-direction: row-reverse;
+    }
+
+    p {
+        width: 300px;
+    }
+
+  }
+  
+  .about-noteBook-titles {
+    border-right: 2px solid white;
+
+    h2, h3 {
+        width: 100%;
+        text-align: end;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-noteBook {
+      padding: 0 !important;
+
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      p {
+        width:  auto;
+      }
+    }
+  
+    .about-noteBook .border-end {
+      border-right: none !important;
+    }
+  
+    .about-noteBook-titles {
+      border-right: none;
+      align-items: center !important;
+      margin-bottom: 20px;
+
+      h2, h3 {
+        text-align: start;
+      }
+    }
+  }

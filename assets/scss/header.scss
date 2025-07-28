@@ -1,0 +1,66 @@
+@media (max-width: 446px) {
+    header h1, header .h1 {
+      margin-left: 10%;
+    }
+}
+
+.art-school-logo {
+    font-family: "The Nautigal", cursive;
+}
+
+.header-big-pic-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-big-pic {
+    height: 100vh;
+    position: relative;
+}
+  
+.header-big-pic-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.header-big-pic-holder-blackfade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005c;
+    z-index: 2;
+}
+  
+.header-big-pic-holder-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: rgb(220, 208, 181);
+    font-weight: bold;
+    text-shadow: 0px 4px 5px black;
+    font-family: "The Nautigal", cursive;
+    font-size: 100px;
+}
+  
+@media (max-width: 754px) {
+    .header-big-pic-holder-title {
+      font-size: 60px;
+    }
+}
+  
+@media (max-width: 452px) {
+    .header-big-pic-holder-title {
+      font-size: 35px;
+      left: 42%;
+    }
+}
+  

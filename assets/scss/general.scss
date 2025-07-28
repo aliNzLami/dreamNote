@@ -1,0 +1,107 @@
+@import "./colors.scss";
+
+* {
+    direction: ltr;
+    text-align: right;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  nav {
+      ul a {
+       font-weight: bold;
+       &:hover {
+            background-color: white;
+            border-radius: 3px;
+            color: black !important;
+       }
+     }
+  }
+
+  nav {
+    background-color: $main-brown;
+    opacity: 0.5;
+    transition: 0.5s;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  nav:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .menu-mobile {
+      padding-right: 0 !important;
+      padding: 30px 0;
+    }
+  
+    .notebook-mobile {
+      justify-content: center !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .menu-mobile {
+      flex-direction: column !important;
+      align-items: center;
+    }
+  
+    .menu-mobile a {
+      margin: 25px 0;
+    }
+  }
+
+  .border-none {
+    border: none;
+  }
+
+  .mobile-header-btn {
+    background-color: white;
+  }
+  
+  .logo {
+    width: 50px;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      width: 70px;
+    } 
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .logoShop {
+      display: none;
+    }
+  }
+  
+  .dropdown-menu_lang {
+    left: -50px !important;
+  }
+
+  .form-btn {
+    text-decoration: none !important;
+    padding: 8px 30px;
+    background-color: #c6d9dd;
+    color: #18181e;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.3s;
+  }
+  .form-btn:hover {
+    background-color: #7da2a9 !important;
+    color: white;
+  }

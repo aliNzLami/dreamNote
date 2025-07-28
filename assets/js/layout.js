@@ -48,7 +48,7 @@ const renderLayout = {
                                                 ${yourNotes.paragraph[language]}
                                             </p>
                                         </div>
-                                        <div class="about-school-titles col-md-6 d-flex flex-column align-items-start" data-aos="fade-right">
+                                        <div class="about-noteBook-titles col-md-6 d-flex flex-column align-items-start" data-aos="fade-right">
                                             <h2>
                                                 ${yourNotes.yourNote[language]}
                                             </h2>
