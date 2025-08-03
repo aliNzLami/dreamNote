@@ -125,7 +125,7 @@ const renderLayout = {
         for(let item of statics) {
             DOM_list.staticsyHTML.innerHTML += `<div class="col-lg-3 col-md-6 p-5">
                                             <span class="d-block text-center h2">
-                                                ${item.number}
+                                                <count-up>${item.number}</count-up>
                                             </span>
                                             <span class="d-block text-center h6">
                                                 ${item[language]}
