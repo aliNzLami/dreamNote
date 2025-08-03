@@ -1,6 +1,8 @@
+@import "./colors.scss";
+
 .about-noteBook {
-    background-color: #2a2a30;
-    color: rgb(220, 208, 181);
+    background-color: $main-dark-gray;
+    color: $main-light-brown;
     
     .row {
         flex-direction: row-reverse;

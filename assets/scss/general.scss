@@ -92,16 +92,14 @@
     left: -50px !important;
   }
 
-  .form-btn {
-    text-decoration: none !important;
-    padding: 8px 30px;
-    background-color: #c6d9dd;
-    color: #18181e;
-    border: none;
-    border-radius: 3px;
-    transition: all 0.3s;
-  }
-  .form-btn:hover {
-    background-color: #7da2a9 !important;
-    color: white;
+  .dropdown-menu_lang {
+    background-color: $main-light-brown !important;
+
+    li {
+      font-weight: bold !important;
+
+      &:active {
+        background-color: $main-brown !important;
+      }
+    }
   }

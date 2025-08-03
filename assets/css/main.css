@@ -10593,19 +10593,14 @@ nav:hover {
   left: -50px !important;
 }
 
-.form-btn {
-  text-decoration: none !important;
-  padding: 8px 30px;
-  background-color: #c6d9dd;
-  color: #18181e;
-  border: none;
-  border-radius: 3px;
-  transition: all 0.3s;
+.dropdown-menu_lang {
+  background-color: #dcd0b5 !important;
 }
-
-.form-btn:hover {
-  background-color: #7da2a9 !important;
-  color: white;
+.dropdown-menu_lang li {
+  font-weight: bold !important;
+}
+.dropdown-menu_lang li:active {
+  background-color: #6b5339 !important;
 }
 
 @media (max-width: 446px) {
@@ -10673,7 +10668,7 @@ nav:hover {
 }
 .about-noteBook {
   background-color: #2a2a30;
-  color: rgb(220, 208, 181);
+  color: #dcd0b5;
 }
 .about-noteBook .row {
   flex-direction: row-reverse;
@@ -10722,20 +10717,7 @@ nav:hover {
 
 .hear-from-you {
   background-color: #2a2a30;
-  color: rgb(220, 208, 181);
-}
-.hear-from-you a {
-  text-decoration: none !important;
-  padding: 8px 30px;
-  background-color: #c6d9dd;
-  color: #18181e;
-  border: none;
-  border-radius: 3px;
-  transition: all 0.3s;
-}
-.hear-from-you a:hover {
-  background-color: #7da2a9 !important;
-  color: white;
+  color: #dcd0b5;
 }
 
 .hearfromyouheight {
@@ -10743,7 +10725,7 @@ nav:hover {
 }
 
 .hearfromyou-txt {
-  color: rgb(220, 208, 181);
+  color: #dcd0b5;
 }
 
 .hearfromyou-imgholder {
@@ -10795,7 +10777,7 @@ nav:hover {
 
 .statics {
   background-color: #2a2a30;
-  color: rgb(220, 208, 181);
+  color: #dcd0b5;
 }
 
 footer {
