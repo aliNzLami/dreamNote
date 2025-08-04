@@ -9,9 +9,11 @@ https://alinzlami.github.io/dreamNote/
 - 🖼️ Bootstrap – Responsive UI layout and styling  
 - 🎯 AOS.js (Animate On Scroll) – Scroll-based animations for smoother UX  
 - 🧠 BEM Methodology – Clear CSS class structure for maintainability  
+- 🗣 RTL UI for languages such as Persian and Arabic
 - 📦 Module Pattern – Encapsulated logic using JavaScript design principles  
-- 🚀 GitHub Pages – Live demo deployment
+- △ Three.js - A 3D notebook to flip the pages.
 - ✅ Cypress Testing
+- 🚀 GitHub Pages – Live demo deployment
 
   # 🌟 Features
 
@@ -27,8 +29,15 @@ https://alinzlami.github.io/dreamNote/
 - Clean Architecture  
   Utilizes BEM and JS Module Pattern for better readability, scalability, and maintainability
 
+- Cypress Unit Test
+  Tested some sections of the page by Cypress
+
+- 3D Shapes
+  Used Three.js to create a 3D notebook, for flipping the pages.
+
+- RTL
+  RTL UI for Persian and Arabic languages
+
 - Live Demo Deployment  
   Project deployed publicly via GitHub Pages for real-time preview and evaluation
 
-- Cypress Unit Test
-  Tested some sections of the page by Cypress

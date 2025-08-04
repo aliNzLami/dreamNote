@@ -1,10 +1,13 @@
 @import "./colors.scss";
-
-* {
-    direction: ltr;
-    text-align: right;
-  }
   
+  .rtl {
+    direction: rtl;
+  }
+
+  .ltr {
+    direction: ltr;
+  }
+
   body {
     overflow-x: hidden;
   }

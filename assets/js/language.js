@@ -20,6 +20,17 @@ const rednerLanguage = {
         language = languageInput.target.attributes.lang.value;
         emptyLayout();
         renderLayout.init();
+        rednerLanguage.changeDirection();
+    },
+
+    changeDirection: () => {
+        
+        if(language === 'per') {
+            document.body.setAttribute('class', 'rtl');
+        }
+        else {
+            document.body.setAttribute('class', 'ltr');
+        }
     },
 
     init: () => {

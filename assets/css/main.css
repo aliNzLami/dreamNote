@@ -10508,9 +10508,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
   direction: ltr;
-  text-align: right;
 }
 
 body {
@@ -10681,10 +10684,18 @@ canvas {
   width: 300px;
 }
 
-.about-noteBook-titles {
-  border-right: 2px solid white;
+.about-noteBook-titles-right {
+  border-right: 2px solid #dcd0b5;
 }
-.about-noteBook-titles h2, .about-noteBook-titles h3 {
+.about-noteBook-titles-right h2, .about-noteBook-titles-right h3 {
+  width: 100%;
+  text-align: end;
+}
+
+.about-noteBook-titles-left {
+  border-left: 2px solid #dcd0b5;
+}
+.about-noteBook-titles-left h2, .about-noteBook-titles-left h3 {
   width: 100%;
   text-align: end;
 }

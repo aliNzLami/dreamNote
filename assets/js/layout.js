@@ -51,11 +51,11 @@ const renderLayout = {
 
     showYourNote: () => {
         DOM_list.yourNotesHTML.innerHTML += `<div class="col-md-6 d-flex align-items-center" data-aos="fade-left">
-                                            <p class="text-start">
+                                            <p class="text-${language === 'per' ? 'end' : 'start'}">
                                                 ${yourNotes.paragraph[language]}
                                             </p>
                                         </div>
-                                        <div class="about-noteBook-titles col-md-6 d-flex flex-column align-items-start" data-aos="fade-right">
+                                        <div class="${language === 'per' ? "about-noteBook-titles-left" : "about-noteBook-titles-right"} col-md-6 d-flex flex-column align-items-start" data-aos="fade-right">
                                             <h2>
                                                 ${yourNotes.yourNote[language]}
                                             </h2>
@@ -92,11 +92,15 @@ const renderLayout = {
         }
     },
 
+    showDiary: () => {
+        DOM_list.diaryHTML.innerText += diary[language];
+    },
+
     showHearYou: () => {
-        DOM_list.hearYouHTML.innerHTML += `<h2 class="h3 text-start">
+        DOM_list.hearYouHTML.innerHTML += `<h2 class="h3 text-${language === 'per' ? 'end' : 'start'}">
                                         ${hearYou.weHearYou[language]}
                                     </h2>
-                                    <p class="my-4 text-start">
+                                    <p class="my-4 text-${language === 'per' ? 'end' : 'start'}">
                                         ${hearYou.paragraph[language]}
                                     </p>`
         
@@ -149,6 +153,7 @@ const renderLayout = {
         renderLayout.showNav();
         renderLayout.showYourNote();
         renderLayout.showPurposes();
+        renderLayout.showDiary();
         renderLayout.showHearYou();
         renderLayout.showOurGallery();
         renderLayout.showStatics();

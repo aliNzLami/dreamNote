@@ -5,6 +5,7 @@ const navLinks = [
         dutc: "Product",
         fr: "Produit",
         jp: "製品",
+        per: 'محصولات',
         url: "#"
     },
     {
@@ -13,6 +14,7 @@ const navLinks = [
         dutc: "Contact",
         fr: "Contact",
         jp: "接触",
+        per: 'ارتباط',
         url: "#"
     },
     {
@@ -21,6 +23,7 @@ const navLinks = [
         dutc: "Carrière",
         fr: "Carrière",
         jp: "キャリア",
+        per: 'همکاری',
         url: "#"
     },
     {
@@ -29,6 +32,7 @@ const navLinks = [
         dutc: "Over Ons",
         fr: "À propos de nous",
         jp: "私たちについて",
+        per: 'درباره ما',
         url: "#"
     },
 ]
@@ -39,7 +43,8 @@ const yourNotes = {
         en: "Your Notes",
         dutc: "Jouw Notities",
         fr: "Vos notes",
-        jp: "あなたのメモ"
+        jp: "あなたのメモ",
+        per: "یادداشت شما",
     },
 
     yourFeeling: {
@@ -47,7 +52,8 @@ const yourNotes = {
         en: "Your Feelings",
         dutc: "Jouw Gevoelens",
         fr: "Vos sentiments",
-        jp: "あなたの気持ち"
+        jp: "あなたの気持ち",
+        per: "احساسات شما",
     },
 
     paragraph: {
@@ -55,7 +61,8 @@ const yourNotes = {
         en: "Take your pencil, feel the air, write down your life and paint your imagination",
         dutc: "Neem je potlood, voel de lucht, schrijf je leven op en schilder je verbeelding",
         fr: "Prenez votre crayon, sentez l'air, écrivez votre vie et peignez votre imagination",
-        jp: "鉛筆を手に取り、空気を感じ、あなたの人生を書き留め、あなたの想像力を描きましょう"
+        jp: "鉛筆を手に取り、空気を感じ、あなたの人生を書き留め、あなたの想像力を描きましょう",
+        per: "یه مداد بردار، یه نفس عمیق، زندگیت رو یا بنویس، یا نقاشی بکش"
     }
 }
 
@@ -65,7 +72,8 @@ const purposes = {
         en: "For All Purposes",
         dutc: "Voor alle Doeleinden",
         fr: "Pour tous les usages",
-        jp: "あらゆる用途に"
+        jp: "あらゆる用途に",
+        per: "برای همه هدف ها"
     },
 
     paragraph: {
@@ -73,7 +81,8 @@ const purposes = {
         en: "Every notebook is a story you can tell, every notebook is a new world you can see",
         dutc: "Elk notitieboekje is een verhaal dat je kunt vertellen, elk notitieboekje is een nieuwe wereld die je kunt zien",
         fr: "Chaque carnet est une histoire que vous pouvez raconter, chaque carnet est un nouveau monde que vous pouvez voir",
-        jp: "すべてのノートはあなたが語ることができる物語であり、すべてのノートはあなたが見ることができる新しい世界です"
+        jp: "すべてのノートはあなたが語ることができる物語であり、すべてのノートはあなたが見ることができる新しい世界です",
+        per: "هر دفترچه یادداشتی یک داستان برای گفتن داره، و هرکدوم یک دنیایی برای دیدن"
     },
 
     purposeList: [
@@ -83,6 +92,7 @@ const purposes = {
             dutc: "Breid de ideeën uit",
             fr: "Développez les idées",
             jp: "アイデアを広げる",
+            per: "گسترش ایده ها",
             icon: `<img src="./assets/images/lightbulb.PNG" height="35">`
         },
 
@@ -92,6 +102,7 @@ const purposes = {
             dutc: "Breng kunst mee",
             fr: "Apportez de l'art avec vous",
             jp: "アートを持ち歩きましょう",
+            per: "هنرت رو همراه داشته باش",
             icon: `<img src="./assets/images/palette.PNG" height="35">`
         },
 
@@ -101,6 +112,7 @@ const purposes = {
             dutc: "Maak uw aantekeningen werkelijkheid",
             fr: "Faites de vos notes une réalité",
             jp: "メモを現実にする",
+            per: "یادداشت رو به واقعیت تبدیل کن",
             icon: `<img src="./assets/images/magic.PNG" height="35">`
         },
 
@@ -110,6 +122,7 @@ const purposes = {
             dutc: "Op reis",
             fr: "En voyage",
             jp: "旅の途中",
+            per: "برای سفر",
             icon: `<img src="./assets/images/planeicon.png" height="35">`
         },
 
@@ -119,6 +132,7 @@ const purposes = {
             dutc: "In de klas",
             fr: "En classe",
             jp: "授業中",
+            per: "برای کلاس",
             icon: `<img src="./assets/images/class.PNG" height="35">`
         },
 
@@ -128,9 +142,19 @@ const purposes = {
             dutc: "Thuis",
             fr: "À la maison",
             jp: "自宅で",
+            per: "برای خانه",
             icon: `<img src="./assets/images/home.PNG" height="35">`
         },
     ]
+}
+
+const diary = {
+    ger: "Lesen Sie mein Tagebuch",
+    en: "Read My Diary",
+    dutc: "Lees mijn dagboek",
+    fr: "Lire mon journal",
+    jp: "私の日記を読んでください",
+    per: "خاطرات منم بخون",
 }
 
 const hearYou = {
@@ -140,6 +164,7 @@ const hearYou = {
         dutc: "Wij Horen Graag van U",
         fr: "Nous aimerions avoir de vos nouvelles",
         jp: "ご意見をお聞かせください",
+        per: "ما مشتاقیم از شما بشنویم",
     },
 
     paragraph: {
@@ -148,6 +173,7 @@ const hearYou = {
         dutc: "Fictief verhaal, levensdagboek, kunst, wat je ook maar hebt opgeschreven. Win in ons toernooi!",
         fr: "Histoire fictive, journal intime, œuvre d'art, peu importe ce que vous avez écrit. Gagnez notre tournoi !",
         jp: "架空の物語、日記、アートなど、あなたが書き留めたものなら何でも。トーナメントで優勝しよう！",
+        per: "داستان نویسی تخیلی، خاطرات، هرچیزی که نوشتی. تورنومنت ما رو برنده شو!",
     }
 }
 
@@ -158,6 +184,7 @@ const ourGallery = {
         dutc: "Onze Galerij",
         fr: "Notre galerie",
         jp: "私たちのギャラリー",
+        per: "گالری ما"
     },
 
     paragraph: {
@@ -166,6 +193,7 @@ const ourGallery = {
         dutc: "Uw reis wordt vastgelegd in onze galerij om met de wereld te delen",
         fr: "Votre voyage sera capturé dans notre galerie pour être partagé avec le monde",
         jp: "あなたの旅は私たちのギャラリーに記録され、世界と共有されます",
+        per: "ماجرای شما در گالری ما ثبت خواهد شد"
     }
 }
 
@@ -177,6 +205,7 @@ const statics = [
         dutc: "Steden",
         fr: "Villes",
         jp: "都市",
+        per: "شهرها"
     },
     {
         number: "20",
@@ -185,6 +214,7 @@ const statics = [
         dutc: "Takken",
         fr: "Succursales",
         jp: "支店",
+        per: "شعبه"
     },
     {
         number: "3000",
@@ -193,6 +223,7 @@ const statics = [
         dutc: "Klanten",
         fr: "Clientes/Clients",
         jp: "お客様",
+        per: "مشتری"
     },
     {
         number: "+1000",
@@ -201,5 +232,6 @@ const statics = [
         dutc: "Producten",
         fr: "Produits",
         jp: "製品",
+        per: "محصولات"
     },
 ]

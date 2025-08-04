@@ -8,4 +8,5 @@ const DOM_list = {
     ourGalleryListHTML: document.getElementById("ourGalleryList"),
     staticsyHTML: document.getElementById("statics"),
     preFooterHTML: document.getElementById("preFooter"),
+    diaryHTML: document.getElementById("diary"),
 }

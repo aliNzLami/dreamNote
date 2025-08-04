@@ -14,8 +14,17 @@
 
   }
   
-  .about-noteBook-titles {
-    border-right: 2px solid white;
+  .about-noteBook-titles-right {
+    border-right: 2px solid $main-light-brown;
+
+    h2, h3 {
+        width: 100%;
+        text-align: end;
+    }
+  }
+
+  .about-noteBook-titles-left {
+    border-left: 2px solid $main-light-brown;
 
     h2, h3 {
         width: 100%;
