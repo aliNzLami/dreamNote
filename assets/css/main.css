@@ -10603,6 +10603,10 @@ nav:hover {
   background-color: #6b5339 !important;
 }
 
+canvas {
+  display: block;
+}
+
 @media (max-width: 446px) {
   header h1, header .h1 {
     margin-left: 10%;
@@ -10667,7 +10671,7 @@ nav:hover {
   }
 }
 .about-noteBook {
-  background-color: #2a2a30;
+  background-color: #141414;
   color: #dcd0b5;
 }
 .about-noteBook .row {
@@ -10715,8 +10719,25 @@ nav:hover {
   font-size: 45px;
 }
 
+.threeD_notebook {
+  background-color: #141414;
+  padding-top: 5rem;
+}
+.threeD_notebook span {
+  color: #dcd0b5;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 33px;
+}
+.threeD_notebook canvas {
+  cursor: pointer;
+}
+
 .hear-from-you {
-  background-color: #2a2a30;
+  background-color: #141414;
   color: #dcd0b5;
 }
 
@@ -10776,13 +10797,13 @@ nav:hover {
 }
 
 .statics {
-  background-color: #2a2a30;
+  background-color: #141414;
   color: #dcd0b5;
 }
 
 footer {
   height: 300px;
-  background-color: #362b1e;
+  background-color: #141414;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10793,6 +10814,9 @@ footer h3 {
 }
 footer p {
   text-align: left !important;
+}
+footer img {
+  border-radius: 50%;
 }
 
 .footerIcons {

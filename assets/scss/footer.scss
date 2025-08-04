@@ -1,6 +1,8 @@
+@import "./colors.scss";
+
 footer {
     height: 300px;
-    background-color: #362b1e;
+    background-color: $main-dark;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +14,10 @@ footer {
 
     p{
         text-align: left !important;
+    }
+
+    img {
+        border-radius: 50%;
     }
 }
   
@@ -29,7 +35,3 @@ footer {
       margin-bottom: 55px;
     }
 }
-
-// footer input, footer textarea {
-//     background-color: rgba(0, 0, 0, 0) !important;
-// }
