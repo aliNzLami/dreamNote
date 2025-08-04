@@ -10709,6 +10709,7 @@ canvas {
   }
   .about-noteBook p {
     width: auto;
+    margin-top: 40px;
   }
   .about-noteBook .border-end {
     border-right: none !important;
@@ -10730,6 +10731,14 @@ canvas {
   font-size: 45px;
 }
 
+@media (max-width: 768px) {
+  .purpose {
+    margin-bottom: 0 !important;
+  }
+  .purpose .card {
+    margin-top: 30px;
+  }
+}
 .threeD_notebook {
   background-color: #141414;
   padding-top: 5rem;
