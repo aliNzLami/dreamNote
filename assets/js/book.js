@@ -1,9 +1,12 @@
-let scene, camera, renderer, textureLoader;
+let scene, camera, renderer, textureLoader, pivot;
 let pages = [], currentPage = 0;
 const pictures = [
-  "https://media.craiyon.com/2025-04-15/ycL1jYsqROeJ5tqMWeX1dg.webp", 
-  "https://pics.craiyon.com/2023-07-05/60d42465df7745d89c96ef70ebfa4c46.webp",
-  "https://media.craiyon.com/2025-04-18/fwwJM-DtTH6yRGLF5iaS9A.webp"
+  "https://i.postimg.cc/SRDL44Yv/1000014341.webp", 
+  "https://i.postimg.cc/593SLBKS/1000014343.webp",
+  "https://i.postimg.cc/ZK5FcW1t/1000014344.webp",
+  "https://i.postimg.cc/fTq7gwN3/1000014345.webp",
+  "https://i.postimg.cc/8zFR2qpZ/1000014346.webp",
+  "https://i.postimg.cc/NjW6BpLB/1000014347.webp",
 ];
 
 const threeD = {
@@ -21,9 +24,13 @@ const threeD = {
     document.getElementById("3D").appendChild(renderer.domElement);
   },
   light: () => {
-    const light = new THREE.DirectionalLight(0xffffff, 1);
+    const light = new THREE.DirectionalLight(0xffffff, 0.5);
     light.position.set(0, 1, 1).normalize();
     scene.add(light);
+  },
+  pivot: () => {
+    pivot = new THREE.Object3D();
+    scene.add(pivot);
   },
   init: () => {
     threeD.scene();
@@ -80,20 +87,13 @@ const pages_shapes = {
     for (let [index, url] of pictures.entries()) {
       try {
         const texture = await pages_shapes.loadTextureAsync(url);
-        console.log(texture); // Now logs the loaded texture
   
         const geometry = new THREE.PlaneGeometry(4, 5);
         const material = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
         const page = new THREE.Mesh(geometry, material);
-        page.visible = false;
-  
-        // Make the first page visible
-        if (index === 0) {
-          page.visible = true;
-        }
-  
         scene.add(page);
         pages.push(page);
+        currentPage = pages.length - 1;
       } catch (err) {
         console.error('Error loading texture:', err);
       }
@@ -109,38 +109,42 @@ function animate() {
 const renderAll = async () => {
   wires_shapes.createShapes();
   await pages_shapes.createShapes();
-  console.log(pages);
-  
   animate();
 }
 
 const onClick_flipping = {
 
-  change_currentPage: () => {
-    if(pages.length - 1 === currentPage) {
-      currentPage = 0;
+  startOver: () => {
+    currentPage = pages.length - 1;
+    for(page of pages) {
+      page.visible = true;
     }
-    else {
-      currentPage = currentPage + 1;
+  },
+
+  change_currentPage: () => {
+    currentPage = currentPage - 1;
+    if(currentPage === -1) {
+      onClick_flipping.startOver();
     }
   },
 
   flipPage: () => {
     gsap.to(pages[currentPage].rotation, {
-      x: -1.5,
-      duration: 1.5,
+      x: -1,
+      duration: 1,
       onComplete: () => {
         pages[currentPage].rotation.x = 0;
         pages[currentPage].position.y = 0;
+        pages[currentPage].position.z = 0;
         pages[currentPage].visible = false;
         onClick_flipping.change_currentPage();
-        pages[currentPage].visible = true;
       }
     });
 
     gsap.to(pages[currentPage].position, {
-      y: Math.PI * 1.1,
-      duration: 1,
+      y: Math.PI / 1.9,
+      z: 1.3,
+      duration: 0.5,
       onComplete: () => {
       }
     });
