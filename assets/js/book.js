@@ -1,4 +1,4 @@
-let scene, camera, renderer, textureLoader, pivot;
+let scene, camera, renderer, textureLoader;
 let pages = [], currentPage = 0;
 const pictures = [
   "https://i.postimg.cc/SRDL44Yv/1000014341.webp", 
@@ -28,15 +28,19 @@ const threeD = {
     light.position.set(0, 1, 1).normalize();
     scene.add(light);
   },
-  pivot: () => {
-    pivot = new THREE.Object3D();
-    scene.add(pivot);
+  responsive: () => {
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjecttionMatrix();
+    })
   },
   init: () => {
     threeD.scene();
     threeD.camera();
     threeD.renderer();
     threeD.light();
+    threeD.responsive()
   }
 }
 
