@@ -1,4 +1,4 @@
-## 🌐 Offline Multilingual Translator
+## 🌐 Offline Multilingual Webpage
 
 # 🚀 Live Demo
 https://alinzlami.github.io/dreamNote/
