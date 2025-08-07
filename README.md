@@ -3,6 +3,11 @@
 # 🚀 Live Demo
 https://alinzlami.github.io/dreamNote/
 
+# ⇄ Branches
+
+1. **main:** For Development
+2. **bundled-project:** For bundle, and deployment  
+
 # 🔧 Technologies Used
 
 - 📜 Vanilla JavaScript – Core logic and offline translation functionality, inspired by i18 
