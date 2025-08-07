@@ -120,7 +120,7 @@ const onClick_flipping = {
 
   startOver: () => {
     currentPage = pages.length - 1;
-    for(page of pages) {
+    for(let page of pages) {
       page.visible = true;
     }
   },
