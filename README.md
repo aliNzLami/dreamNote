@@ -6,7 +6,7 @@ https://alinzlami.github.io/dreamNote/
 # ⇄ Branches
 
 1. **main:** For Development
-2. **bundled-project:** For bundle, and deployment  
+2. **bundled-project:** For Bundle, and Deployment  
 
 # 🔧 Technologies Used
 
