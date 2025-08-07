@@ -46,10 +46,12 @@ https://alinzlami.github.io/dreamNote/
   Project deployed publicly via GitHub Pages for real-time preview and evaluation
 
 # Usage
-1. Install Live Server
+1. Run "npm i"
+
+2. Install Live Server
 
 ![alt text](./assets/images/readme/extension.PNG)
 
-2. Right Click on index.html
+3. Right Click on index.html
 
 ![alt text](./assets/images/readme/liveServer.PNG)
