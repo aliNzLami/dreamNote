@@ -1,7 +1,9 @@
-const languageBtn = [...document.getElementsByClassName("languageBtn")];
-let language = localStorage.getItem("lang");
+import { renderLayout, emptyLayout } from './layout.js';
 
-const rednerLanguage = {
+const languageBtn = [...document.getElementsByClassName("languageBtn")];
+export let language = localStorage.getItem("lang");
+
+export const rednerLanguage = {
     setDefaultLanguage: () => {
         if(!language) {
             localStorage.setItem("lang", "en");

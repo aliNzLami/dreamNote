@@ -1,4 +1,4 @@
-const DOM_list = {
+export const DOM_list = {
     navBarHTML: document.getElementById("navbar"),
     yourNotesHTML: document.getElementById("yourNotes"),
     purposesHTML: document.getElementById("purposes"),

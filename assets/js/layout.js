@@ -1,45 +1,14 @@
-const gallery = [
-    {
-        flip: "right",
-        img: "./assets/images/a.jpg"
-    },
-    {
-        flip: "left",
-        img: "./assets/images/h.jpg"
-    },
-    {
-        flip: "left",
-        img: "./assets/images/d.jpg"
-    },
-    {
-        flip: "down",
-        img: "./assets/images/f.jpg"
-    },
-    {
-        flip: "up",
-        img: "./assets/images/e.jpg"
-    },
-    {
-        flip: "right",
-        img: "./assets/images/g.jpg"
-    },
-]
+import { navLinks, yourNotes, purposes, diary, hearYou, ourGallery, statics, gallery, preFooter } from './content.js';
+import { DOM_list } from './DOMlist.js';
+import { language } from './language.js';
 
-const preFooter = [
-    "./assets/images/i.jpg",
-    "./assets/images/l.jpg",
-    "./assets/images/j.jpg",
-]
-
-
-const emptyLayout = () => {
-    console.log("HELLO");
+export const emptyLayout = () => {
     for(let item in DOM_list) {
         DOM_list[item].innerHTML = "";
     }
 }
 
-const renderLayout = {
+export const renderLayout = {
 
     showNav: () => {
         for (let item of navLinks) {

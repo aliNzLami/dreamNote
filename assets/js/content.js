@@ -1,4 +1,4 @@
-const navLinks = [
+export const navLinks = [
     {
         ger: "Produkte",
         en: "Product",
@@ -37,7 +37,7 @@ const navLinks = [
     },
 ]
 
-const yourNotes = {
+export const yourNotes = {
     yourNote: {
         ger: "Ihre Notizen",
         en: "Your Notes",
@@ -66,7 +66,7 @@ const yourNotes = {
     }
 }
 
-const purposes = {
+export const purposes = {
     purpose: {
         ger: "Für alle Einsatzzwecke",
         en: "For All Purposes",
@@ -148,7 +148,7 @@ const purposes = {
     ]
 }
 
-const diary = {
+export const diary = {
     ger: "Lesen Sie mein Tagebuch",
     en: "Read My Diary",
     dutc: "Lees mijn dagboek",
@@ -157,7 +157,7 @@ const diary = {
     per: "خاطرات منم بخون",
 }
 
-const hearYou = {
+export const hearYou = {
     weHearYou: {
         ger: "Wir würden gerne von Ihnen hören",
         en: "We Would Love To Hear From You",
@@ -177,7 +177,7 @@ const hearYou = {
     }
 }
 
-const ourGallery = {
+export const ourGallery = {
     ourGallery: {
         ger: "Unsere Galerie",
         en: "Our Gallery",
@@ -197,7 +197,7 @@ const ourGallery = {
     }
 }
 
-const statics = [
+export const statics = [
     {
         number: "15",
         ger: "Städte",
@@ -234,4 +234,38 @@ const statics = [
         jp: "製品",
         per: "محصولات"
     },
+]
+
+
+export const gallery = [
+    {
+        flip: "right",
+        img: "./assets/images/a.jpg"
+    },
+    {
+        flip: "left",
+        img: "./assets/images/h.jpg"
+    },
+    {
+        flip: "left",
+        img: "./assets/images/d.jpg"
+    },
+    {
+        flip: "down",
+        img: "./assets/images/f.jpg"
+    },
+    {
+        flip: "up",
+        img: "./assets/images/e.jpg"
+    },
+    {
+        flip: "right",
+        img: "./assets/images/g.jpg"
+    },
+]
+
+export const preFooter = [
+    "./assets/images/i.jpg",
+    "./assets/images/l.jpg",
+    "./assets/images/j.jpg",
 ]
