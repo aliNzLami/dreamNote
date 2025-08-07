@@ -47,7 +47,9 @@ https://alinzlami.github.io/dreamNote/
 
 # Usage
 1. Install Live Server
+
 ![alt text](./assets/images/readme/extension.PNG)
 
 2. Right Click on index.html
+
 ![alt text](./assets/images/readme/liveServer.PNG)
