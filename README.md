@@ -13,6 +13,7 @@ https://alinzlami.github.io/dreamNote/
 - 📦 Module Pattern – Encapsulated logic using JavaScript design principles  
 - △ Three.js - A 3D notebook to flip the pages.
 - ✅ Cypress Testing
+- 🧊 Webpack Bundling
 - 🚀 GitHub Pages – Live demo deployment
 
   # 🌟 Features
@@ -38,6 +39,15 @@ https://alinzlami.github.io/dreamNote/
 - RTL
   RTL UI for Persian and Arabic languages
 
+- Webpack
+  Bundling with Webpack
+
 - Live Demo Deployment  
   Project deployed publicly via GitHub Pages for real-time preview and evaluation
 
+# Usage
+1. Install Live Server
+![alt text](./assets/images/readme/extension.PNG)
+
+2. Right Click on index.html
+![alt text](./assets/images/readme/liveServer.PNG)
