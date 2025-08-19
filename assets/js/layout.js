@@ -1,4 +1,4 @@
-import { navLinks, yourNotes, purposes, diary, hearYou, ourGallery, statics, gallery, preFooter } from './content.js';
+import { navLinks, yourNotes, purposes, diary, slides, hearYou, ourGallery, statics, gallery, preFooter } from './content.js';
 import { DOM_list } from './DOMlist.js';
 import { language } from './language.js';
 
@@ -84,7 +84,7 @@ export const renderLayout = {
                                     </p>`
 
         for(let item of gallery) {
-            DOM_list.ourGalleryListHTML.innerHTML += `<div class="position-relative gallery-img-height col-md-6" data-aos="flip-${item.flip}" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            DOM_list.ourGalleryListHTML.innerHTML += `<div class="position-relative gallery-img-height col-md-6" data-aos="${item.dataAOS}" data-aos-easing="ease-out-cubic" data-aos-duration="300">
                                                 <div class="gallery-img">
                                                     <img src="${item.img}">
                                                 </div>
@@ -118,11 +118,28 @@ export const renderLayout = {
         
     },
 
+    showSlides: () => {
+        const slideSection = DOM_list.slidesHTML;
+        for(let item of slides) {
+            slideSection.innerHTML += `
+                <div class="slide">
+                <div class="slide-bg" style="background-image: url('${item.img}');"></div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">${item[`title_${language}`]}</h1>
+                    <p class="slide-subtitle">${item[`description_${language}`]}</p>
+                </div>
+            </div>
+            `
+        }
+    },
+
     init: () => {
         renderLayout.showNav();
         renderLayout.showYourNote();
         renderLayout.showPurposes();
         renderLayout.showDiary();
+        renderLayout.showSlides()
         renderLayout.showHearYou();
         renderLayout.showOurGallery();
         renderLayout.showStatics();

@@ -9,4 +9,5 @@ export const DOM_list = {
     staticsyHTML: document.getElementById("statics"),
     preFooterHTML: document.getElementById("preFooter"),
     diaryHTML: document.getElementById("diary"),
+    slidesHTML: document.getElementById("slides"),
 }

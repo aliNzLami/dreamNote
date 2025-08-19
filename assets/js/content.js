@@ -154,8 +154,64 @@ export const diary = {
     dutc: "Lees mijn dagboek",
     fr: "Lire mon journal",
     jp: "私の日記を読んでください",
-    per: "خاطرات منم بخون",
+    per: "نوشته های منم ببین",
 }
+
+export const slides = [
+    {
+        title_en: "History",
+        title_ger: "",
+        title_dutc: "",
+        title_fr: "",
+        title_jp: "",
+        title_per: "",
+
+        description_en: "Your words make history",
+        description_ger: "",
+        description_dutc: "",
+        description_fr: "",
+        description_jp: "",
+        description_per: "",
+
+        img: "./assets/images/slide1.jpg"
+    },
+
+    {
+        title_en: "Existance",
+        title_ger: "",
+        title_dutc: "",
+        title_fr: "",
+        title_jp: "",
+        title_per: "",
+
+        description_en: "",
+        description_ger: "",
+        description_dutc: "",
+        description_fr: "",
+        description_jp: "",
+        description_per: "",
+
+        img: "./assets/images/slide2.jpg"
+    },
+
+    {
+        title_en: "Sempiternal",
+        title_ger: "",
+        title_dutc: "",
+        title_fr: "",
+        title_jp: "",
+        title_per: "",
+
+        description_en: "It's sempiternal when you write it down",
+        description_ger: "",
+        description_dutc: "",
+        description_fr: "",
+        description_jp: "",
+        description_per: "",
+
+        img: "./assets/images/slide3.jpg"
+    },
+]
 
 export const hearYou = {
     weHearYou: {
@@ -236,30 +292,29 @@ export const statics = [
     },
 ]
 
-
 export const gallery = [
     {
-        flip: "right",
+        dataAOS: "fade-zoom-in",
         img: "./assets/images/a.jpg"
     },
     {
-        flip: "left",
+        dataAOS: "fade-zoom-in",
         img: "./assets/images/h.jpg"
     },
     {
-        flip: "left",
+        dataAOS: "fade-right",
         img: "./assets/images/d.jpg"
     },
     {
-        flip: "down",
+        dataAOS: "fade-left",
         img: "./assets/images/f.jpg"
     },
     {
-        flip: "up",
+        dataAOS: "fade-zoom-in",
         img: "./assets/images/e.jpg"
     },
     {
-        flip: "right",
+        dataAOS: "fade-zoom-in",
         img: "./assets/images/g.jpg"
     },
 ]
