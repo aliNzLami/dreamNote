@@ -93,7 +93,7 @@ export const purposes = {
             fr: "Développez les idées",
             jp: "アイデアを広げる",
             per: "گسترش ایده ها",
-            icon: `<img src="./assets/images/lightbulb.PNG" height="35">`
+            icon: `<img src="./assets/images/lightbulb.webp" height="35">`
         },
 
         {
@@ -103,7 +103,7 @@ export const purposes = {
             fr: "Apportez de l'art avec vous",
             jp: "アートを持ち歩きましょう",
             per: "هنرت رو همراه داشته باش",
-            icon: `<img src="./assets/images/palette.PNG" height="35">`
+            icon: `<img src="./assets/images/palette.webp" height="35">`
         },
 
         {
@@ -113,7 +113,7 @@ export const purposes = {
             fr: "Faites de vos notes une réalité",
             jp: "メモを現実にする",
             per: "یادداشت رو به واقعیت تبدیل کن",
-            icon: `<img src="./assets/images/magic.PNG" height="35">`
+            icon: `<img src="./assets/images/magic.webp" height="35">`
         },
 
         {
@@ -123,7 +123,7 @@ export const purposes = {
             fr: "En voyage",
             jp: "旅の途中",
             per: "برای سفر",
-            icon: `<img src="./assets/images/planeicon.png" height="35">`
+            icon: `<img src="./assets/images/planeicon.webp" height="35">`
         },
 
         {
@@ -133,7 +133,7 @@ export const purposes = {
             fr: "En classe",
             jp: "授業中",
             per: "برای کلاس",
-            icon: `<img src="./assets/images/class.PNG" height="35">`
+            icon: `<img src="./assets/images/class.webp" height="35">`
         },
 
         {
@@ -143,7 +143,7 @@ export const purposes = {
             fr: "À la maison",
             jp: "自宅で",
             per: "برای خانه",
-            icon: `<img src="./assets/images/home.PNG" height="35">`
+            icon: `<img src="./assets/images/home.webp" height="35">`
         },
     ]
 }
@@ -173,7 +173,7 @@ export const slides = [
         description_jp: "あなたの言葉が歴史を作る",
         description_per: "کلمات تو تاریخ می‌سازند",
 
-        img: "./assets/images/slide1.jpg"
+        img: "./assets/images/slide1.webp"
     },
 
     {
@@ -191,7 +191,7 @@ export const slides = [
         description_jp: "実存は本質に先立つ",
         description_per: "وجود بر ماهیت تقدم دارد",
 
-        img: "./assets/images/slide2.jpg"
+        img: "./assets/images/slide2.webp"
     },
 
     {
@@ -209,7 +209,7 @@ export const slides = [
         description_jp: "かきとめると、それはえいえんです。",
         description_per: "وقتی آن را می‌نویسی، جاودانه است",
 
-        img: "./assets/images/slide3.jpg"
+        img: "./assets/images/slide3.webp"
     },
 ]
 
@@ -295,32 +295,32 @@ export const statics = [
 export const gallery = [
     {
         dataAOS: "fade-zoom-in",
-        img: "./assets/images/a.jpg"
+        img: "./assets/images/a.webp"
     },
     {
         dataAOS: "fade-zoom-in",
-        img: "./assets/images/h.jpg"
+        img: "./assets/images/h.webp"
     },
     {
         dataAOS: "fade-right",
-        img: "./assets/images/d.jpg"
+        img: "./assets/images/d.webp"
     },
     {
         dataAOS: "fade-left",
-        img: "./assets/images/f.jpg"
+        img: "./assets/images/f.webp"
     },
     {
         dataAOS: "fade-zoom-in",
-        img: "./assets/images/e.jpg"
+        img: "./assets/images/e.webp"
     },
     {
         dataAOS: "fade-zoom-in",
-        img: "./assets/images/g.jpg"
+        img: "./assets/images/g.webp"
     },
 ]
 
 export const preFooter = [
-    "./assets/images/i.jpg",
-    "./assets/images/l.jpg",
-    "./assets/images/j.jpg",
+    "./assets/images/i.webp",
+    "./assets/images/l.webp",
+    "./assets/images/j.webp",
 ]

@@ -3,6 +3,7 @@
 .threeD_notebook {
     background-color: $main-dark;
     padding-top: 5rem;
+    
 
     span {
         color: $main-light-brown;
@@ -16,5 +17,7 @@
 
     canvas {
         cursor: pointer;
+        width: 100% !important;
+        height: 100% !important;
     }
 }

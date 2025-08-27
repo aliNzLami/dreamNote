@@ -10754,6 +10754,8 @@ canvas {
 }
 .threeD_notebook canvas {
   cursor: pointer;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .slide {
@@ -10893,10 +10895,6 @@ canvas {
     font-size: 1rem;
   }
 }
-.hidden {
-  visibility: hidden;
-}
-
 .hear-from-you {
   background-color: #141414;
   color: #dcd0b5;
@@ -10924,6 +10922,11 @@ canvas {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .hear-from-you {
+    padding-top: 5rem;
+  }
+}
 .gallery-img-height {
   height: 600px;
 }
